@@ -1,0 +1,164 @@
+html {
+ height: 100%;    
+    
+}
+
+body {
+    background-color: lightgray;
+    height: 100%;
+}
+
+
+nav li{
+    display: inline-block;
+    color: whitesmoke;
+    text-align: center;
+    font-size: .75em;
+    margin: 0 auto;
+    max-width: 100%;
+   
+}
+
+nav a {
+    margin: 0 auto;
+    background-color: red;
+    border: 2px outset #464646;
+    border-radius: 4px;
+    padding: 0 2px;
+    width: 100%;
+}
+
+#wrap {
+    background-color: maroon;
+    color: white;
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    margin-top: 1em;
+}
+
+.div-out {
+    width: 100%;
+    text-align: center;
+}
+
+.box1 {
+    background-color: whitesmoke;
+    color: #464646;
+    width: 90%;
+    margin: 0 auto;
+    height: 2em;
+    padding-top: 10px;
+    border-bottom: 2px outset gray;
+    border-radius: 4px;
+
+}
+
+.section-wrap {
+    margin: 0 auto;
+    text-align: center;
+}
+
+h6 {
+    margin: 10% 0 2%;
+}
+
+.box2 {
+    
+    color: #464646;
+    background-color: lightgray;
+    float: left;
+    height: 70%;
+    width: 25%;
+    margin: 2.5% 1.25% 0 5%;
+    border-bottom: 2px outset gray;
+    border-radius: 4px
+}
+#fader {
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+    
+}
+/*
+input[type=range] {
+ -webkit-appearance: none;
+    border: 1px groove navy;
+    border-radius: 1em;
+    height: .2em;
+*/
+}
+
+*
+/*
+input[type=checkbox] {
+    -webkit-appearance: none;
+*/
+*/
+/*    border: 2px solid black;*/
+/*    outline: 1px solid #1e5180;*/
+}
+
+.fader {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#artist {
+    width: 90%;
+    font-size: 14px;
+    border: 1px solid Navy;
+}
+
+section {
+    font-size 10px;
+}
+
+.genre_box {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.genre1 {
+    font-size: 8px;
+    width:50%;
+    display: inline-block;
+    float: left;
+    margin-right: ;
+/*    padding-right: 30px*/
+    min-width: 50px;
+}
+
+.genre2 {
+    font-size: 8px;
+    width: 50%;
+    display: inline-block;
+    float: left;
+    margin-left:0;
+    min-width: 50px;
+    
+}
+
+.box3 {
+    float: left;
+    height: 70%;
+    background-color: orangered;
+    width: 62.5%;
+    margin: 2.5% 1.25% 0 1.25%;
+    border-bottom: 2px outset gray;
+    border-radius: 4px
+}
+
+p {
+    font-size: 10px;
+    display: inline;
+    float: left;
+}
+
+.songs {
+    width: 80%;
+    padding-left: 20px;
+}
