@@ -11,8 +11,8 @@ var Player = (function(origPlayer){
             callback(songArray2);
         });
 
-        jsonDataLoad.open("GET", "second.json");
-        jsonDataLoad.send();
+        jsonDataLoad2.open("GET", "second.json");
+        jsonDataLoad2.send();
     };
     console.log("testing array", songArray2);
     return origPlayer;

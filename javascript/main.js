@@ -22,6 +22,7 @@ $("#addNewBTN").click( (event) => {
 
 $("#moreBTN").click( (event) => {
     Player.loadSecondJson()
+    console.log("show me events!");
 })
 
 console.log($(".delete"));
