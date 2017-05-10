@@ -1,3 +1,4 @@
+"use strict";
 var Player = (function(origPlayer){
 //    let songArray = [];
     console.log("this?", this);
@@ -21,11 +22,9 @@ var Player = (function(origPlayer){
         $("#songs").append(addNew);
         $("#input1, #input2, #input3").val("");
         $("#input1").focus();
-    }
+    };
     return origPlayer;
 })(Player || {});
 
-//$("#addNewBTN").click( (event) => {
-//    Player.addNewMusic();
-//});
+
 

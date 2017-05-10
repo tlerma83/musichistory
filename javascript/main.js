@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("hello");
 
 
@@ -17,6 +19,10 @@ $("#remove-add-inputs").click ( (event) => {
 $("#addNewBTN").click( (event) => {
     Player.addNewMusic();
 });
+
+//$("button").click( (event) => {
+//    $("button").parent("div").remove();
+//});
 
 
 Player.displayJSON();

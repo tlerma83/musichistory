@@ -1,3 +1,5 @@
+"use strict";
+
 var Player = (function(origPlayer){
     let songArray = [];
 
@@ -13,15 +15,16 @@ var Player = (function(origPlayer){
                                     <h3> Artist:  ${songArray[i].artist}</h3>
                                     <p><strong>Album:</strong> ${songArray[i].album}</p>
                                     <p><strong>Song:</strong> ${songArray[i].songTitle}</p>
+                                    <button>delete</delete>
                                     </div>`;
                 $("#songs").append(whatishappening);
 
-            };
+            }
         });
 
-    }
+    };
     return origPlayer;
 
-})(Player || {})
+})(Player || {});
 
 

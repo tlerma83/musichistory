@@ -1,4 +1,4 @@
-
+"use strict";
 var Player = (function(origPlayer){
     let songArray = [];
 
@@ -13,11 +13,11 @@ var Player = (function(origPlayer){
 
         jsonDataLoad.open("GET", "songs.json");
         jsonDataLoad.send();
-    }
+    };
     console.log("testing array", songArray);
     return origPlayer;
 
-})(Player || {})
+})(Player || {});
 
 //Player.loadSongJson();
 
