@@ -20,9 +20,9 @@ $("#addNewBTN").click( (event) => {
     Player.addNewMusic();
 });
 
-//$("button").click( (event) => {
-//    $("button").parent("div").remove();
-//});
+$(".delete").click( (event) => {
+    $(".delete").parent("div").remove();
+});
 
 
 Player.displayJSON();

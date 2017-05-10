@@ -1,13 +1,13 @@
 "use strict";
 var Player = (function(origPlayer){
-//    let songArray = [];
-    console.log("this?", this);
+//    console.log("this?", this);
     //THIS totally worked!!!
-    $(this).keyup( (event) =>{
+    $(document).keyup( (event) =>{
         if (event.keyCode === 13) {
             origPlayer.addNewMusic();
             $("#input1, #input2, #input3").val("");
             $("#input1").focus();
+            console.log("is key event happening", event);
         }
     });
 
