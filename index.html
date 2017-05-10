@@ -9,24 +9,32 @@
 
 <body>
     <div id="wrap"> test
-        
+
         <div class="box1">
             <div class="div-out">
                 <nav>
                     <ul>
-                        <li><a href="#">Visit Music</a></li>
-                        <li><a href="#">Add Music</a></li>
+                        <li id="remove-add-inputs"><a href="#">Visit Music</a></li>
+                        <li id="nav-add-li"><a href="#">Add Music</a></li>
                         <li><a href="#">Profile</a></li>
                     </ul>
                 </nav>
+                <div class="flex-me hidden">
+                    <input type="text" id="input1" placeholder="Song Name">
+                    <input type="text" id="input2" placeholder="Artist Name">
+                    <input type="text" id="input3" placeholder="Album Name">
+                    <button id="addNewBTN">Add</button>
+                </div>
             </div>
         </div>
+        <div class="flex-me-boxes">
+
         <div class="box2">
             <div id="fader">
                 <h6 for="fader">Song Length</h6>
-                <input type="range" min="0" max="100" value="50" id="fader" 
+                <input type="range" min="0" max="100" value="50" id="fader"
                    step="1">
-                
+
                 <h6>Artist</h6>
                 <select id="artist" name="artist_name">
                     <option></option>
@@ -67,23 +75,27 @@
                         <input type="checkbox" id="genre" value="metal" name="metal_genre">
                         <label for="genre">Metal</label>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
         <div class="box3">
             <div id="songs">
-                <h3 class="song-title">Song Name</h3>
-                <p>Artist Name  |   Album Name  |   Genre   </p>
-                <h3>Song Name</h3>
-                <p>Artist Name  |   Album Name  |   Genre   </p>
-                <h3>Song Name</h3>
-                <p>Artist Name  |   Album Name  |   Genre   </p>
-            </div>    
+
+            </div>
         </div>
-<!--        <div>test 4</div>-->
+
+        </div>
         <div id="test4"></div>
     </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="javascript/loadSongs.js"></script>
+    <script type="text/javascript" src="javascript/display.js"></script>
+    <script type="text/javascript" src="javascript/addNew.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
 </body>
 </html>

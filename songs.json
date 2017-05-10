@@ -1,0 +1,29 @@
+{
+    "song": [
+        {
+            "artist": "ZZTop",
+            "songTitle": "Legs",
+            "album": "Eliminator"
+        },
+        {
+            "artist": "Supertramp",
+            "songTitle": "The Logical Song",
+            "album": "Breakfast in America"
+        },
+        {
+            "artist": "Pink Floyd",
+            "songTitle": "Another Brick in the Wall",
+            "album": "The Wall"
+        },
+        {
+            "artist": "Guns & Roses",
+            "songTitle": "Welcome to the Jungle",
+            "album": "Appetite for Destruction"
+        },
+        {
+            "artist": "Alanis Morissette",
+            "songTitle": "Ironic",
+            "album": "Jagged Little Pill"
+        }
+    ]
+}
