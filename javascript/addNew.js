@@ -17,11 +17,18 @@ var Player = (function(origPlayer){
                     <h3> Artist:  ${$("#input1").val()}</h3>
                     <p><strong>Album:</strong> ${$("#input2").val()}</p>
                     <p><strong>Song:</strong> ${$("#input3").val()}</p>
+                    <button class="delete">delete</button>
                     </div>`;
 
         $("#songs").append(addNew);
         $("#input1, #input2, #input3").val("");
         $("#input1").focus();
+
+        $(".delete").click( (event) => {
+            console.log("I need an event", event);
+            $(event.currentTarget).parent("div").remove();
+            $("#input1").focus();
+        });
     };
     return origPlayer;
 })(Player || {});

@@ -20,7 +20,9 @@ $("#addNewBTN").click( (event) => {
     Player.addNewMusic();
 });
 
-
+$("#moreBTN").click( (event) => {
+    Player.loadSecondJson()
+})
 
 console.log($(".delete"));
 Player.displayJSON();

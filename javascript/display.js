@@ -17,23 +17,15 @@ var Player = (function(origPlayer){
                                     <p><strong>Song:</strong> ${songArray[i].songTitle}</p>
                                     <button class="delete">delete</button>
                                     </div>`;
-//$( "li" ).each(function( index ) {
-//  console.log( index + ": " + $( this ).text() );
-//});
-
-
-                $(".delete").each(function(item){
-                    $(".delete").click( (event) => {
-                        console.log("I need an event", event);
-                        $(".delete").parent("div").remove();
-                    });
-                });
-
-
                 $("#songs").append(whatishappening);
 
 
             }
+                    //grab each btn with class delete. take the event then the currentTarget wgich will be the current selected btn, then grab the parent it is in and remove
+                    $(".delete").click( (event) => {
+                        console.log("I need an event", event);
+                        $(event.currentTarget).parent("div").remove();
+                    });
         });
 
     };
