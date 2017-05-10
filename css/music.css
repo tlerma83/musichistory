@@ -1,6 +1,6 @@
 html {
- height: 100%;    
-    
+ height: 100%;
+
 }
 
 body {
@@ -22,7 +22,7 @@ nav li {
     margin: 0 auto;
     max-width: 100%;
     padding: 0;
-   
+
 }
 
 nav a {
@@ -56,11 +56,37 @@ nav a {
     width: 90%;
     margin: 0 auto;
     height: 4em;
-    padding-top: 10px;
+/*    padding-top: 10px;*/
     border-bottom: 2px outset gray;
     border-radius: 4px;
 
 }
+
+.flex-me {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex-me-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.flex-me input, button {
+    width: 25%;
+    padding: 5px;
+    margin-left: 5px;
+/*    font-size: 1vw;*/
+}
+
+
 
 .section-wrap {
     margin: 0 auto;
@@ -73,32 +99,25 @@ h6 {
 }
 
 .box2 {
-    
+
     color: #464646;
     background-color: lightgray;
-    float: left;
-    height: 70%;
+/*    float: left;*/
+    height: 100%;
     width: 25%;
-    margin: 2.5% 1.25% 0 5%;
+    margin-top: 2.5%;
+    margin-left: 5%;
     border-bottom: 2px outset gray;
-    border-radius: 4px
+    border-radius: 4px;
+    padding-bottom: 2em;
 }
 #fader {
     max-width: 90%;
     margin: 0 auto;
     display: block;
-    
-}
-/*
-input[type=range] {
- -webkit-appearance: none;
-    border: 1px groove navy;
-    border-radius: 1em;
-    height: .2em;
-*/
+
 }
 
-*
 /*
 input[type=checkbox] {
     -webkit-appearance: none;
@@ -120,9 +139,11 @@ input[type=checkbox] {
     border: 1px solid Navy;
 }
 
+/*
 section {
     font-size 10px;
 }
+*/
 
 .genre_box {
     width: 100%;
@@ -148,26 +169,37 @@ section {
     float: left;
     margin-left:0;
     min-width: 50px;
-    
+
 }
 
 .box3 {
-    float: left;
-    height: 70%;
-    background-color: orangered;
-    width: 62.5%;
-    margin: 2.5% 1.25% 0 1.25%;
-    border-bottom: 2px outset gray;
-    border-radius: 4px
-}
-
-
-p {
-    font-size: 10px;
-}
-
-.songs {
-    width: 80%;
-    padding-left: 20px;
     height: 100%;
+    background-color: orangered;
+    width: 60%;
+    border-bottom: 2px outset gray;
+    border-radius: 4px;
+    margin-top: 2.5%;
+    margin-right: 5%;
+    color: black;
 }
+
+.box3 h3 {
+/*    font-size: 1.5em;*/
+    margin: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.box3 p {
+/*    font-size: 1em;*/
+    margin: 5px;;
+    text-align: center;
+}
+
+.music {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 50%;
+    margin-left: 25%;
+}
+
