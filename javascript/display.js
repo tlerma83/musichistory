@@ -17,7 +17,21 @@ var Player = (function(origPlayer){
                                     <p><strong>Song:</strong> ${songArray[i].songTitle}</p>
                                     <button class="delete">delete</button>
                                     </div>`;
+//$( "li" ).each(function( index ) {
+//  console.log( index + ": " + $( this ).text() );
+//});
+
+
+                $(".delete").each(function(item){
+                    $(".delete").click( (event) => {
+                        console.log("I need an event", event);
+                        $(".delete").parent("div").remove();
+                    });
+                });
+
+
                 $("#songs").append(whatishappening);
+
 
             }
         });
