@@ -1,20 +1,31 @@
 "use strict";
+
 var Player = (function(origPlayer){
     let songArray = [];
+    origPlayer.loadSongJson =function() {
 
-    origPlayer.loadSongJson =
-
-    function(callback) {
         var jsonDataLoad = new XMLHttpRequest();
         jsonDataLoad.addEventListener("load", function(event){
             songArray = JSON.parse(this.responseText).song;
-            callback(songArray);
+            for (var i = 0; i < songArray.length; i++) {
+
+                 let whatishappening = `<div class="music">
+                                    <h3> Artist:  ${songArray[i].artist}</h3>
+                                    <p><strong>Album:</strong> ${songArray[i].album}</p>
+                                    <p><strong>Song:</strong> ${songArray[i].songTitle}</p>
+                                    <button class="delete">delete</button>
+                                    </div>`;
+                $("#songs").append(whatishappening);
+            }
+            $(".delete").click( (event) => {
+                $(event.currentTarget).parent("div").remove();
+            });
         });
 
         jsonDataLoad.open("GET", "songs.json");
         jsonDataLoad.send();
     };
-    console.log("testing array", songArray);
+
     return origPlayer;
 
 })(Player || {});

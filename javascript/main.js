@@ -8,12 +8,14 @@ console.log("hello");
 $("#nav-add-li").click( (event) => {
     $(".flex-me").removeClass("hidden");
     $(".music").addClass("hidden");
+    $("#moreBTN").addClass("hidden");
     $("#input1").focus();
 });
 
 $("#remove-add-inputs").click ( (event) => {
     $(".music").removeClass("hidden");
     $(".flex-me").addClass("hidden");
+    $("#moreBTN").removeClass("hidden");
 });
 
 $("#addNewBTN").click( (event) => {
@@ -21,12 +23,13 @@ $("#addNewBTN").click( (event) => {
 });
 
 $("#moreBTN").click( (event) => {
-    Player.loadSecondJson()
+    Player.loadSecondJson();
     console.log("show me events!");
-})
+});
 
-console.log($(".delete"));
-Player.displayJSON();
+
+//console.log($(".delete"));
+Player.loadSongJson();
 
 
 
