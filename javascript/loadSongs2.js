@@ -3,12 +3,10 @@
 var Player = (function(origPlayer){
     let songArray2 = [];
 
-    origPlayer.loadSecondJson =
+    origPlayer.loadSecondJson = function() {
+        $.getJSON("second.json", function(parsedData){
 
-    function() {
-        var jsonDataLoad2 = new XMLHttpRequest();
-        jsonDataLoad2.addEventListener("load", function(event){
-            songArray2 = JSON.parse(this.responseText).song;
+            songArray2 = parsedData.song;
             for (var i = 0; i < songArray2.length; i++) {
 
                  let whatishappening = `<div class="music">
@@ -19,15 +17,16 @@ var Player = (function(origPlayer){
                                     </div>`;
                 $("#songs").append(whatishappening);
             }
+
             $(".delete").click( (event) => {
                 $(event.currentTarget).parent("div").remove();
             });
+
+        }).fail(function(arg1, arg2, arg3){
+            console.log("Second Json data did not load", arg2, arg3);
         });
 
-        jsonDataLoad2.open("GET", "second.json");
-        jsonDataLoad2.send();
     };
-    console.log("testing array", songArray2);
     return origPlayer;
 
 })(Player || {});

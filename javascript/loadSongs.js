@@ -2,11 +2,11 @@
 
 var Player = (function(origPlayer){
     let songArray = [];
-    origPlayer.loadSongJson =function() {
+    origPlayer.loadSongJson = function() {
 
-        var jsonDataLoad = new XMLHttpRequest();
-        jsonDataLoad.addEventListener("load", function(event){
-            songArray = JSON.parse(this.responseText).song;
+        $.getJSON("songs.json", function(parsedData){
+            songArray = parsedData.song;
+
             for (var i = 0; i < songArray.length; i++) {
 
                  let whatishappening = `<div class="music">
@@ -17,13 +17,15 @@ var Player = (function(origPlayer){
                                     </div>`;
                 $("#songs").append(whatishappening);
             }
+
             $(".delete").click( (event) => {
                 $(event.currentTarget).parent("div").remove();
             });
+           //this is the else statement that accepts 3 arguments.. 1.the actual HTTP request, 2. gives a message of what the error was, 3. gives the error code and returns an error object with key value pairs or a property to use
+        }).fail(function(httpRequest, errorMessage, errorCodeObject){
+            console.log("Load failed", errorMessage, errorCodeObject);
         });
 
-        jsonDataLoad.open("GET", "songs.json");
-        jsonDataLoad.send();
     };
 
     return origPlayer;
