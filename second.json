@@ -1,0 +1,29 @@
+{
+    "song": [
+        {
+            "artist": "Sample1",
+            "songTitle": "some kind of Sample",
+            "album": "poop"
+        },
+        {
+            "artist": "Superfreak",
+            "songTitle": "Illogicl Song",
+            "album": "poopschmear"
+        },
+        {
+            "artist": "Pinkie Pie",
+            "songTitle": "Bricks man",
+            "album": "The Wall-- It will be big"
+        },
+        {
+            "artist": "And.....",
+            "songTitle": "Jungle time",
+            "album": "Destruction"
+        },
+        {
+            "artist": "Zack Morris",
+            "songTitle": "Iconic",
+            "album": "Saved by the Bell"
+        }
+    ]
+}

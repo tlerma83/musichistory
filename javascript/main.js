@@ -1,3 +1,5 @@
+"use strict";
+
 console.log("hello");
 
 
@@ -6,20 +8,28 @@ console.log("hello");
 $("#nav-add-li").click( (event) => {
     $(".flex-me").removeClass("hidden");
     $(".music").addClass("hidden");
+    $("#moreBTN").addClass("hidden");
     $("#input1").focus();
 });
 
 $("#remove-add-inputs").click ( (event) => {
     $(".music").removeClass("hidden");
     $(".flex-me").addClass("hidden");
+    $("#moreBTN").removeClass("hidden");
 });
 
 $("#addNewBTN").click( (event) => {
     Player.addNewMusic();
 });
 
+$("#moreBTN").click( (event) => {
+    Player.loadSecondJson();
+    console.log("show me events!");
+});
 
-Player.displayJSON();
+
+//console.log($(".delete"));
+Player.loadSongJson();
 
 
 

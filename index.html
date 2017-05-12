@@ -29,61 +29,61 @@
         </div>
         <div class="flex-me-boxes">
 
-        <div class="box2">
-            <div id="fader">
-                <h6 for="fader">Song Length</h6>
-                <input type="range" min="0" max="100" value="50" id="fader"
-                   step="1">
+            <div class="box2">
+                <div id="fader">
+                    <h6 for="fader">Song Length</h6>
+                    <input type="range" min="0" max="100" value="50" id="fader"
+                       step="1">
 
-                <h6>Artist</h6>
-                <select id="artist" name="artist_name">
-                    <option></option>
-                    <option value="jack_white">Jack White</option>
-                    <option value="tom_waits">Tom Waits</option>
-                    <option value="cage_the_elephant">Cage the Elephant</option>
-                    <option value="mars_volta">Mars Volta</option>
-                    <option value="black_keys">The Black Keys</option>
-                </select>
-                <h6>Album</h6>
-                <select id="artist" name="album_name">
-                    <option></option>
-                    <option value="name">Blunderbus</option>
-                    <option value="tom_waits">Tom Waits</option>
-                    <option value="cage_the_elephant">Cage the Elephant</option>
-                    <option value="mars_volta">Mars Volta</option>
-                    <option value="black_keys">The Black Keys</option>
-                </select>
-                <h6>Genre</h6>
-                <div class="genre_box">
-                    <div class="genre1">
-                        <input type="checkbox" id="genre" value="pop" name="pop_genre">
-                        <label for="genre">Rock</label><br>
+                    <h6>Artist</h6>
+                    <select id="artist" name="artist_name">
+                        <option></option>
+                        <option value="jack_white">Jack White</option>
+                        <option value="tom_waits">Tom Waits</option>
+                        <option value="cage_the_elephant">Cage the Elephant</option>
+                        <option value="mars_volta">Mars Volta</option>
+                        <option value="black_keys">The Black Keys</option>
+                    </select>
+                    <h6>Album</h6>
+                    <select id="artist" name="album_name">
+                        <option></option>
+                        <option value="name">Blunderbus</option>
+                        <option value="tom_waits">Tom Waits</option>
+                        <option value="cage_the_elephant">Cage the Elephant</option>
+                        <option value="mars_volta">Mars Volta</option>
+                        <option value="black_keys">The Black Keys</option>
+                    </select>
+                    <h6>Genre</h6>
+                    <div class="genre_box">
+                        <div class="genre1">
+                            <input type="checkbox" id="genre" value="pop" name="pop_genre">
+                            <label for="genre">Rock</label><br>
 
-                        <input type="checkbox" id="genre" value="pop" name="pop_genre">
-                        <label for="genre">Pop</label><br>
+                            <input type="checkbox" id="genre" value="pop" name="pop_genre">
+                            <label for="genre">Pop</label><br>
 
-                        <input type="checkbox" id="genre" value="classical" name="classical_genre">
-                        <label for="genre">Classical</label><br>
+                            <input type="checkbox" id="genre" value="classical" name="classical_genre">
+                            <label for="genre">Classical</label><br>
+                        </div>
+                        <div class="genre2">
+                            <input type="checkbox" id="genre" value="jazz" name="jazz_genre">
+                            <label for="payment">Jazz</label><br>
+
+                            <input type="checkbox" id="genre" value="blues" name="blues_genre">
+                            <label for="genre">Blues</label><br>
+
+                            <input type="checkbox" id="genre" value="metal" name="metal_genre">
+                            <label for="genre">Metal</label>
+                        </div>
+
                     </div>
-                    <div class="genre2">
-                        <input type="checkbox" id="genre" value="jazz" name="jazz_genre">
-                        <label for="payment">Jazz</label><br>
-
-                        <input type="checkbox" id="genre" value="blues" name="blues_genre">
-                        <label for="genre">Blues</label><br>
-
-                        <input type="checkbox" id="genre" value="metal" name="metal_genre">
-                        <label for="genre">Metal</label>
-                    </div>
-
                 </div>
             </div>
-        </div>
-        <div class="box3">
-            <div id="songs">
-
+            <div class="box3">
+                <div id="songs"></div>
+                <button id="moreBTN">More</button>
             </div>
-        </div>
+
 
         </div>
         <div id="test4"></div>
@@ -94,7 +94,7 @@
       integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
       crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascript/loadSongs.js"></script>
-    <script type="text/javascript" src="javascript/display.js"></script>
+    <script type="text/javascript" src="javascript/loadSongs2.js"></script>
     <script type="text/javascript" src="javascript/addNew.js"></script>
     <script type="text/javascript" src="javascript/main.js"></script>
 </body>
